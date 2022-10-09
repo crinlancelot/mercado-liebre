@@ -1,52 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Registro</title>
+
+    <!-- Custom fonts for this template -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" />
+
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <h1>Formulario de registro</h1>
-    <form name="registro" method="get" action="/">
-        <label for="nombre">Nombre y Apellido</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required>
 
-        <label for="usuario">Nombre de usuario</label>
-        <input type="usuario" id="usuario" name="usuario" required>
+    <main>
+        <h1>Formulario de registro</h1>
+        <form name="registro" method="get" action="/">
+            <label for="nombre">Nombre y Apellido</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required>
 
-        <label for="date">Fecha de cumpleaños</label>
-        <input type="date" id="date" name="date" min="1950-01-01" max="" required>
+            <label for="usuario">Nombre de usuario</label>
+            <input type="usuario" id="usuario" name="usuario" required>
 
-        <label for="domicilio">Domicilio</label>
-        <input type="text" id="domicilio" name="domicilio" required>
-        
-        <label for="perfil">Perfil del usuario</label>
-        <select id="perfil" name="perfil">
-            <option value="comprar">Comprar</option>
-            <option value="vender">Vender</option>  
-        </select> 
-        
+            <label for="date">Fecha de cumpleaños</label>
+            <input type="date" id="date" name="date" min="1950-01-01" max="" required>
 
-        <label for="categorias">Categorías de interés</label>
-        <input type="checkbox" name="categorias" value="electro">Electro
-        <input type="checkbox" name="categorias" value="moda">Moda
-        <input type="checkbox" name="categorias" value="hogar">Hogar
-        <input type="checkbox" name="categorias" value="jugueteria">Juguetería
-        <input type="checkbox" name="categorias" value="vida-sana">Vida Sana
+            <label for="domicilio">Domicilio</label>
+            <input type="text" id="domicilio" name="domicilio" required>
 
-        <label for="foto">Seleccionar foto de usuario</label>
-        <input type="file" name="foto" id="foto" accept=".jpg, .png">
+            <label for="perfil">Perfil del usuario</label>
+            <select id="perfil" name="perfil">
+                <option value="comprar">Comprar</option>
+                <option value="vender">Vender</option>
+            </select>
 
-        <label for="pass">Contraseña</label>
-        <input type="password" name="pass" id="pass" required>
+            <div class="categories">
+                <p>Categorías de interés</p>
+                <input type="checkbox" id="cbox1" name="cbox1" value="electro"> <label for="cbox1">Electro</label>
+                <input type="checkbox" id="cbox2" name="cbox2" value="moda"> <label for="cbox2">Moda</label>
+                <input type="checkbox" id="cbox3" name="cbox3" value="hogar"> <label for="cbox3">Hogar</label>
+                <input type="checkbox" id="cbox4" name="cbox4" value="jugueteria"> <label for="cbox4">Juguetería</label>
+                <input type="checkbox" id="cbox5" name="cbox5" value="vida-sana"> <label for="cbox5">Vida Sana</label>   
+            </div>
 
-        <label for="confirmar-pass">Confirmar contraseña</label>
-        <input type="password" name="confirmar-pass" id="confirmar-pass" required>
+            <label for="foto">Seleccionar foto de usuario</label>
+            <input type="file" name="foto" id="foto" accept=".jpg, .png">
 
-        <button type="submit">Enviar</button>
-        <button type="reset">Borrar</button>
+            <label for="pass">Contraseña</label>
+            <input type="password" name="pass" id="pass" required>
 
-    </form>
+            <label for="confirmar-pass">Confirmar contraseña</label>
+            <input type="password" name="confirmar-pass" id="confirmar-pass" required>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+
+        </form>
+
+    </main>
+
 </body>
+
 </html>

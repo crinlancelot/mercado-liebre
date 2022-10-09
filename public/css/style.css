@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif; 
-    font-size: 12px;
+    font-size: 14px;
     margin: 0%;
     background-color: #ebebeb;
 }    
@@ -42,8 +42,26 @@ main {
     margin-top: 20px;
 }
 
-.input {
-    width: 150px;
+.search input {
+    width: 200px;
+}
+
+form input, form select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.categories {
+    margin: 10px 0;
+}
+
+.categories label {
+    padding-right: 10px;
+}
+
+.categories input[type="checkbox"] {
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
 #lupa {
@@ -116,4 +134,3 @@ section div {
     border-radius: 50%;
     line-height: 15px;
 }
-
