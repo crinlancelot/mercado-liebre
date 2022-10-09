@@ -12,8 +12,10 @@ app.use(express.static("css"))
 app.use(express.static("images"))
  
 
-app.listen(3000, ()=> {
-    console.log("Servidor corriendo en el puerto 3000, link puerto: http://localhost:3000")
+const port = process.env.PORT || 3000;
+
+app.listen(port, ()=> {
+    console.log(`Servidor corriendo en el puerto ${port}, link puerto: http://localhost:${port}`)
 })
 
 app.get("/", (req, res)=>{
