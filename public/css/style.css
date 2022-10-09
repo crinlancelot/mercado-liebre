@@ -53,12 +53,17 @@ main {
     border: 1px solid rgb(118, 118, 118);
 }
 
-#burger {
-    background-color: blue;
-    border: 1px solid black;
-    color: white;
-    margin-left: 150px;
-    margin-bottom: 20px;
+.burger-menu {
+    text-align: center;
+}
+
+.burger-menu i {
+    background-color: #03264C;
+    color: #ebebeb;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 30px;
 }
 
 .cuotas {
@@ -111,3 +116,4 @@ section div {
     border-radius: 50%;
     line-height: 15px;
 }
+
