@@ -104,7 +104,6 @@ footer{
     width: 33px;
     height: 33px;
     text-align: center;
-    margin: auto;
     margin-left: 2px;
     margin-top: 4px;
     margin-bottom: 0px;
@@ -414,6 +413,10 @@ form button {
         visibility: visible;
     }
 
+    .main-header {
+        padding: 20px 5%;
+    }
+
     .main-header-top-bar {
         display: flex;
         padding-bottom: 20px;
@@ -437,7 +440,7 @@ form button {
     .link-logo{
         display: flex;
         flex-wrap: wrap;
-        width: 33%;
+        width: 25%;
     }
 
     .buscador{
@@ -452,11 +455,10 @@ form button {
     }
 
     .copy-header-desktop{
-        display: flex;
-        flex-wrap: wrap;
+        display: inline-block;
         margin: auto;
-        text-align: left;
-        width: 39%;
+        text-align: center;
+        width: 30%;
     }
 
     .burger-menu{
@@ -549,6 +551,10 @@ form button {
         display: flex;
         padding-bottom: 20px;
     }
+
+    .buscador-barra{
+        width: 75%;
+    }
     
     .logo-buscador{
        width: 100%;
@@ -568,7 +574,7 @@ form button {
     .link-logo{
         display: flex;
         flex-wrap: wrap;
-        width: 33%;
+        width: 25%;
     }
     
     .buscador{
@@ -576,7 +582,7 @@ form button {
         flex-wrap: wrap;
         margin: auto;
         justify-content: center;
-        width: 33%;
+        width: 45%;
     }
 
     .copy-header-cel{
@@ -584,10 +590,9 @@ form button {
     }
 
     .copy-header-desktop{
-        display: flex;
-        flex-wrap: wrap;
+        display: inline-block;
         margin: auto;
-        text-align: left;
+        text-align: center;
         width: 30%;
         font-size: 16px;
     }
